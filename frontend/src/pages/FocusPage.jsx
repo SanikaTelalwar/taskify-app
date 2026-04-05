@@ -53,7 +53,7 @@ export default function FocusPage() {
       clearInterval(intervalRef.current);
     }
     return () => clearInterval(intervalRef.current);
-  }, [running]);
+  }, [running]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSessionComplete = async () => {
     setRunning(false);
