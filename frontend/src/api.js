@@ -3,7 +3,7 @@ import axios from 'axios';
 // ✅ When proxy is set in package.json,
 //    use relative URLs — no need for full http://localhost:5000
 const API = axios.create({
-  baseURL: 'http://localhost:5000',
+  baseURL: 'https://taskify-app-tlis.onrender.com',
   withCredentials: false,
   headers: {
     'Content-Type': 'application/json',
